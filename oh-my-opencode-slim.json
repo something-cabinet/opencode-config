@@ -11,7 +11,7 @@
       },
       "oracle": {
         "model": "ollama-cloud/deepseek-v4.1-flash:1017",
-        "variant": "high",
+        "variant": "max",
         "skills": ["simplify"],
         "mcps": []
       },
@@ -23,18 +23,19 @@
       },
       "librarian": {
         "model": "ollama-cloud/deepseek-v4.1-flash:1017",
-        "variant": "high",
+        "variant": "low",
         "skills": [],
         "mcps": ["websearch", "context7", "grep_app"]
       },
       "explorer": {
         "model": "ollama-cloud/deepseek-v4.1-flash:1017",
+        "variant": "low",
         "skills": [],
         "mcps": []
       },
       "designer": {
         "model": "ollama-cloud/deepseek-v4.1-flash:1017",
-        "variant": "high",
+        "variant": "max",
         "skills": ["playwriter"],
         "mcps": []
       },
