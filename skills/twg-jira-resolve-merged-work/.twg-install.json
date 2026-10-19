@@ -1,0 +1,11 @@
+{
+  "skillName": "twg",
+  "target": "OpenCode",
+  "installPath": "/Users/nhkhanh/.config/opencode/skills/twg-jira-resolve-merged-work",
+  "binaryPath": "/Users/nhkhanh/.local/bin/twg",
+  "installedAt": "2026-10-01T03:09:11.847Z",
+  "installedVersion": "1.3.3",
+  "buildProfile": "external",
+  "buildCommit": "32ee314125ea",
+  "builtAt": "2026-09-28T12:52:15.199Z"
+}

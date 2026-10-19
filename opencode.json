@@ -1,0 +1,68 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "*": "allow"
+  },
+  "agent": {
+    "explore": {
+      "disable": true
+    },
+    "general": {
+      "disable": true
+    }
+  },
+  "lsp": true,
+  "mcp": {
+    "codeceptjs": {
+      "command": [
+        "sh",
+        "-c",
+        "if [ -x node_modules/.bin/codeceptjs-mcp ]; then exec node_modules/.bin/codeceptjs-mcp; else exec npx -y --package=codeceptjs@4 codeceptjs-mcp; fi"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "ast-grep": {
+      "command": [
+        "uvx",
+        "--from",
+        "git+https://github.com/ast-grep/ast-grep-mcp",
+        "ast-grep-server"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "mcp-jq": {
+      "command": ["npx", "@247arjun/mcp-jq"],
+      "enabled": true,
+      "type": "local"
+    },
+    "ripgrep": {
+      "command": ["npx", "-y", "mcp-ripgrep@latest"],
+      "enabled": true,
+      "type": "local"
+    },
+    "svelte": {
+      "command": ["npx", "-y", "@sveltejs/mcp"],
+      "enabled": true,
+      "type": "local"
+    },
+    "spartan-ui": {
+      "command": ["npx", "-y", "@spartan-ng/mcp"],
+      "enabled": true,
+      "type": "local"
+    },
+    "cloudflare": {
+      "type": "remote",
+      "url": "https://mcp.cloudflare.com/mcp",
+      "enabled": true,
+      "oauth": {}
+    },
+    "resend": {
+      "type": "remote",
+      "url": "https://mcp.resend.com/mcp",
+      "enabled": true
+    }
+  },
+  "plugin": ["oh-my-opencode-slim@3.0.4"]
+}

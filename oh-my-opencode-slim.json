@@ -1,0 +1,53 @@
+{
+  "$schema": "https://unpkg.com/oh-my-opencode-slim@latest/oh-my-opencode-slim.schema.json",
+  "preset": "ollama-cloud",
+  "presets": {
+    "ollama-cloud": {
+      "orchestrator": {
+        "model": "ollama-cloud/deepseek-v4.1-flash:1017",
+        "variant": "high",
+        "skills": ["*"],
+        "mcps": ["*", "!context7"]
+      },
+      "oracle": {
+        "model": "ollama-cloud/deepseek-v4.1-flash:1017",
+        "variant": "high",
+        "skills": ["simplify"],
+        "mcps": []
+      },
+      "council": {
+        "model": "ollama-cloud/deepseek-v4.1-flash:1017",
+        "variant": "high",
+        "skills": [],
+        "mcps": []
+      },
+      "librarian": {
+        "model": "ollama-cloud/deepseek-v4.1-flash:1017",
+        "variant": "high",
+        "skills": [],
+        "mcps": ["websearch", "context7", "grep_app"]
+      },
+      "explorer": {
+        "model": "ollama-cloud/deepseek-v4.1-flash:1017",
+        "skills": [],
+        "mcps": []
+      },
+      "designer": {
+        "model": "ollama-cloud/deepseek-v4.1-flash:1017",
+        "variant": "high",
+        "skills": ["playwriter"],
+        "mcps": []
+      },
+      "fixer": {
+        "model": "ollama-cloud/deepseek-v4.1-flash:1017",
+        "skills": [],
+        "mcps": []
+      },
+      "observer": {
+        "model": "ollama-cloud/deepseek-v4.1-flash:1017",
+        "skills": ["playwriter"],
+        "mcps": []
+      }
+    }
+  }
+}
